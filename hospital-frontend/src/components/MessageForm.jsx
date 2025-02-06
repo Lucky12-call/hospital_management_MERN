@@ -14,7 +14,7 @@ const MessageForm = () => {
     try {
       await axios
         .post(
-          "https://hms-backend-deployment-c2ae.onrender.com/api/v1/message/send",
+          "https://hospital-management-mern-xi.vercel.app/api/v1/message/send",
           { firstName, lastName, email, phone, message },
           {
             withCredentials: true,
