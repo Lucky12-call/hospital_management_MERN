@@ -11,7 +11,7 @@ const Doctors = () => {
     const fetchDoctors = async () => {
       try {
         const { data } = await axios.get(
-          "https://hms-backend-deployment-c2ae.onrender.com/api/v1/user/doctors",
+          "https://hospital-management-mern-xi.vercel.app/api/v1/user/doctors",
           { withCredentials: true }
         );
         setDoctors(data.doctors);

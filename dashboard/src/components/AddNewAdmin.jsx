@@ -23,7 +23,7 @@ const AddNewAdmin = () => {
     try {
       await axios
         .post(
-          "https://hms-backend-deployment-c2ae.onrender.com/api/v1/user/admin/addnew",
+          "https://hospital-management-mern-xi.vercel.app/api/v1/user/admin/addnew",
           { firstName, lastName, email, phone, nic, dob, gender, password, role: "Admin" },
           {
             withCredentials: true,

@@ -13,7 +13,7 @@ const Dashboard = () => {
     const fetchAppointments = async () => {
       try {
         const { data } = await axios.get(
-          "https://hms-backend-deployment-c2ae.onrender.com/api/v1/appointment/getall",
+          "https://hospital-management-mern-xi.vercel.app/api/v1/appointment/getall",
           { withCredentials: true }
         );
         setAppointments(data.appointments);

@@ -10,7 +10,7 @@ const Messages = () => {
     const fetchMessages = async () => {
       try {
         const { data } = await axios.get(
-          "https://hms-backend-deployment-c2ae.onrender.com/api/v1/message/getall",
+          "https://hospital-management-mern-xi.vercel.app/api/v1/message/getall",
           { withCredentials: true }
         );
         setMessages(data.messages);
