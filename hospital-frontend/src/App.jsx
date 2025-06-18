@@ -20,7 +20,7 @@ const App = () => {
     const fetchUser = async () => {
       try {
         const response = await axios.get(
-          "https://hospital-management-mern-xi.vercel.app/api/v1/user/patient/me",
+          "https://hospital-management-mern-mocha.vercel.app/api/v1/user/patient/me",
           {
             withCredentials: true,
           }
@@ -33,7 +33,7 @@ const App = () => {
       }
     };
     fetchUser();
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isAuthenticated]);
 
   return (

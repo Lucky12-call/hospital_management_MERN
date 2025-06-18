@@ -13,7 +13,7 @@ const Dashboard = () => {
     const fetchAppointments = async () => {
       try {
         const { data } = await axios.get(
-          "https://hospital-management-mern-xi.vercel.app/api/v1/appointment/getall",
+          "https://hospital-management-mern-mocha.vercel.app/api/v1/appointment/getall",
           { withCredentials: true }
         );
         setAppointments(data.appointments);
@@ -68,7 +68,7 @@ const Dashboard = () => {
             </div>
           </div>
           <div className="secondBox">
-            <p>Total Appointments</p> 
+            <p>Total Appointments</p>
             <h3>1500</h3>
           </div>
           <div className="thirdBox">

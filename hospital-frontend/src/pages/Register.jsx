@@ -23,8 +23,18 @@ const Register = () => {
     try {
       await axios
         .post(
-          "https://hospital-management-mern-xi.vercel.app/api/v1/user/patient/register",
-          { firstName, lastName, email, phone, nic, dob, gender, password, role: "Patient" },
+          "https://hospital-management-mern-mocha.vercel.app/api/v1/user/patient/register",
+          {
+            firstName,
+            lastName,
+            email,
+            phone,
+            nic,
+            dob,
+            gender,
+            password,
+            role: "Patient",
+          },
           {
             withCredentials: true,
             headers: { "Content-Type": "application/json" },

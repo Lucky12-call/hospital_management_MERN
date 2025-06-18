@@ -11,7 +11,7 @@ const Doctors = () => {
     const fetchDoctors = async () => {
       try {
         const { data } = await axios.get(
-          "https://hospital-management-mern-xi.vercel.app/api/v1/user/doctors",
+          "https://hospital-management-mern-mocha.vercel.app/api/v1/user/doctors",
           { withCredentials: true }
         );
         setDoctors(data.doctors);

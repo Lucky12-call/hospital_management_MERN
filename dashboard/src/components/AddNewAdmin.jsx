@@ -23,8 +23,18 @@ const AddNewAdmin = () => {
     try {
       await axios
         .post(
-          "https://hospital-management-mern-xi.vercel.app/api/v1/user/admin/addnew",
-          { firstName, lastName, email, phone, nic, dob, gender, password, role: "Admin" },
+          "https://hospital-management-mern-mocha.vercel.app/api/v1/user/admin/addnew",
+          {
+            firstName,
+            lastName,
+            email,
+            phone,
+            nic,
+            dob,
+            gender,
+            password,
+            role: "Admin",
+          },
           {
             withCredentials: true,
             headers: { "Content-Type": "application/json" },
